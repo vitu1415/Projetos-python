@@ -3,7 +3,7 @@ import time
 
 print('Bem-vindo ao jogo 21, as regas são simples')
 time.sleep(1)
-print('Vai funcionar da seginte forma, se vc quiser mais carta clique em (1), se quiser para (2).')
+print('Vai funcionar da seginte forma, se vc quiser mais carta clique em (1), se quiser parar (2).')
 time.sleep(1)
 print('podendo sair numeros de 1 a 11, podendo repetir esses numeros.\nAgora sabendo das instruções BOM JOGO.')
 
@@ -133,7 +133,7 @@ while continuar == 1:
     if resultado_final_do_adiversario < 0:
         resultado_final_do_adiversario = resultado_final_do_adiversario * -1
 
-    print('Em comparação ao seu adiver sario vc...')
+    print('Em comparação ao seu adversário vc...')
     time.sleep(2)
     if resultado_final_do_adiversario > seu_resultado_final:
         pontos += 1
@@ -141,7 +141,7 @@ while continuar == 1:
         print('Parabéns, vc ganhou :)')
         time.sleep(1)
         print('seus pontos: {}'.format(pontos))
-        print('numero do adiversario: {}.'.format(jogo_21.num_adiversario))
+        print('numero do adversário: {}.'.format(jogo_21.num_adiversario))
         print('seu numero: {}'.format(resultado))
     
     if resultado_final_do_adiversario < seu_resultado_final:
@@ -150,7 +150,7 @@ while continuar == 1:
         print('Que pena vc perdeu :(')
         time.sleep(1)
         print('seus pontos: {}'.format(pontos))
-        print('numero do adiversario: {}.'.format(jogo_21.num_adiversario))
+        print('numero do adversário: {}.'.format(jogo_21.num_adiversario))
         print('seu numero: {}'.format(resultado))
 
     if resultado_final_do_adiversario == seu_resultado_final:
@@ -158,7 +158,7 @@ while continuar == 1:
         print('Vc empatou')
         time.sleep(1)
         print('seus pontos: {}'.format(pontos))
-        print('numero do adiversario: {}'.format(jogo_21.num_adiversario))
+        print('numero do adversário: {}'.format(jogo_21.num_adiversario))
         print('seu numero: {}'.format(resultado))
     
     time.sleep(1)
